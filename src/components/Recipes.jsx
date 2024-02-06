@@ -68,7 +68,7 @@ function Recipes() {
       </h1>
       <div className="w-screen font-thin flex flex-wrap justify-center">
       
-          {recipes.length>0?recipes.map((data) => {
+          {recipes && recipes.map((data) => {
             return (
                 <Card key={data.id}
                   id={data.id}
