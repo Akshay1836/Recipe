@@ -20,7 +20,7 @@ function Searched() {
   return (
         <div className="h-screen w-screen">
       <div className="w-screen font-thin flex flex-col sm:flex-row sm:flex-wrap justify-center px-4">
-          {results.map((data) => {
+          {results && results.map((data) => {
             return (
                 <Card className="object-cover bgcover"
                 key={data.id}

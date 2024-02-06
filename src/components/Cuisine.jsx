@@ -65,7 +65,7 @@ function Cuisine() {
         {params.type} products */}
         {/* </h1>} */}
         <div className="w-screen font-thin flex flex-col sm:flex-row sm:flex-wrap justify-center px-4">
-          {cuisine.map((data) => {
+          {cuisine && cuisine.map((data) => {
             return (
               <Card
                 className="object-cover bgcover"
