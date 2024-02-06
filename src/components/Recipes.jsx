@@ -77,7 +77,7 @@ function Recipes() {
                   image={data.image}
                 />
             );
-          }) : ""}
+          })}
       </div>
     </div>
   );
