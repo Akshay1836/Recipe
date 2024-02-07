@@ -55,7 +55,7 @@ function Recipes() {
       }, [])
 
     const fetchdata = async () => {
-      const api=await fetch(`https://api.spoonacular.com/recipes/random?apiKey=0da6af52e648411bb3e19c5bb7e50f96&number=9`)
+      const api=await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_API_KEY}&number=9`)
       const result = await api.json();
       setRecipes(result.recipes);
       console.log(result);
